@@ -11,9 +11,9 @@ export default function Home() {
       </Head>
 
  
-     <div className='w-full sm:w-2/3 p-4 mt-8 mx-auto bg-gray-300 rounded-lg font-light text-gray-900'> 
+     <div className='w-full text-lg sm:w-2/3 p-4 mt-8 mx-auto bg-gray-300 rounded-lg font-light text-gray-900'> 
         
-        <p className='text-lg'>O escritório Antici Vidigal Werneck Sociedade de Advogados foi constituído 
+        <p className=''>O escritório Antici Vidigal Werneck Sociedade de Advogados foi constituído 
         pelas sócias <Link href="socias"> Vera Rezende Vidigal e Raffaella Antici de Oliveira Lima, Camila Werneck de Souza Dias,</Link> 
          com o objetivo de prestar serviços de advocacia personalizados. </p>
          <p className=' mt-4'>A experiência adquirida pelas sócias com extensa prática desenvolvida 
