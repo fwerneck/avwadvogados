@@ -42,12 +42,12 @@ export default function CardList() {
             {socias.map( socias => {
                 return(
 
-        <li className="grid grid-cols-3 sm:w-2/3 mx-auto text-right pr-6 bg-slate-300 border-teal-800 border-b-2 border-t-2 rounded-xl space-y-4 m-6 shadow-lg">
+        <li key={socias.id} className="grid grid-cols-3 sm:w-2/3 mx-auto text-right pr-6 bg-slate-300 border-teal-800 border-b-2 border-t-2 rounded-xl space-y-4 m-6 shadow-lg">
             <Image className=' relative inset-0 object-cover object-top rounded-xl' src={socias.imgUrl} width={310} height={385} alt={socias.imgAlt}/>
             <div className="col-span-2 ">
             <p className="text-lg font-bold">{socias.nome}</p>
             <p>{socias.email}</p>
-             <button key={socias.id} onClick={() => toggleComment(socias.id)} className='mt-4'>
+             <button  onClick={() => toggleComment(socias.id)} className='mt-4'>
             <a href="#" className='inline-block px-4 py-2 rounded-lg bg-teal-700 uppercase tracking-wider font-semibold text-sm text-white shadow-lg sm:text-base' >+</a>
      	    </button>  
              {!commentShown[socias.id]? null:
